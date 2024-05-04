@@ -2,7 +2,7 @@ spring:
   application:
     name: todo-one
   datasource:
-    url: jdbc:mysql://localhost:3306/todo
+    url: jdbc:mysql://localhost:3306/tutorial2?createDatabaseIfNotExist=true
     username: root
     password: ali45
   jpa:
@@ -14,6 +14,10 @@ spring:
 #      password: ali45
 server:
   port: 8800
+
+logging:
+  file:
+    name: log/myLog.log
 
 
 
